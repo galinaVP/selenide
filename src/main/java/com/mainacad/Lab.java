@@ -1,41 +1,75 @@
 package com.mainacad;
 
-/**
- * Hello world!
- *
- */
+import org.openqa.selenium.*;
+import static com.codeborne.selenide.Selectors.*;
+import static com.codeborne.selenide.Selenide.*;
+
+
 public class Lab
 {
-    public static void main( String[] args )
-    {
 
-        //TODO Открыть тестовую страницу: https://www.toolsqa.com/automation-practice-form
+    public static void main( String[] args ) throws InterruptedException {
+        open("https://demoqa.com/automation-practice-form");
+        Thread.sleep(1000);
 
-        //TODO: Вывести в консоль текст Инфо сообщения
+        System.out.println($(".main-header").text());
+        Thread.sleep(1000);
 
-        //TODO: Вывести в консоль текст заголовка формы ("Practice Automation Form")
+        $(By.id("firstName")).setValue("Halyna");
+        Thread.sleep(1000);
 
-        //TODO: Кликнуть линк Partial Link Test
+        $(By.id("lastName")).setValue("Prytuliak");
+        Thread.sleep(1000);
 
-        //TODO: Заполнить поле First name:
+        $(By.id("userEmail")).setValue("galka.prit@gmail.com");
+        Thread.sleep(1000);
 
-        //TODO: Заполнить поле Last name:
+        $(By.xpath("//*[text()='Female']")).click();
+        Thread.sleep(1000);
 
-        //TODO: Выбрать пол
+        $(By.id("userNumber")).setValue("0976063327");
+        Thread.sleep(1000);
+        //$(By.cssSelector("input#dateOfBirthInput")).click();
+        //$(By.cssSelector(".react-datepicker__month-select")).setValue("September").pressEnter();
+        //$(By.cssSelector(".react-datepicker__year-select")).setValue("1991").pressEnter();
+        //$(By.cssSelector(".react-datepicker__day--011")).click();
 
-        //TODO: Выбрать количество лет опыта
+        $(byId("dateOfBirthInput")).click();
+        Thread.sleep(1000);
 
-        //TODO: Заполнить поле дата
+        $(byCssSelector(".react-datepicker__tab-loop"));
+        $(byCssSelector(".react-datepicker__month-select")).click();
+        $(byCssSelector(".react-datepicker__month-select"));
+        $(byCssSelector("[value='1']")).click();
+        Thread.sleep(1000);
 
-        //TODO: Выбрать несколько Automation Tool
+        $(byCssSelector(".react-datepicker__year-select")).click();
+        $(byCssSelector(".react-datepicker__year-select"));
+        $(byCssSelector("[value='1991']")).click();
+        Thread.sleep(1000);
 
-        //TODO: Выбрать континент из выпадающего списка
+        $(byCssSelector(".react-datepicker__week:nth-child(2) .react-datepicker__day:nth-child(2)")).click();
+        Thread.sleep(1000);
 
-        //TODO: Выбрать несколько вариантов из списка Selenium Commands
+        $(By.xpath("/html//input[@id='subjectsInput']")).sendKeys("Eng");
+        $(By.xpath("/html//input[@id='subjectsInput']")).sendKeys(Keys.ENTER);
+        Thread.sleep(1000);
 
-        //TODO: Кликнуть на кнопку Button
+        $(byId("currentAddress")).setValue("Keletska");
 
-        //TODO: Закрыть браузер
+        $(By.xpath("//label[contains(.,'Reading')]")).click();
 
+        $(By.xpath("/html//input[@id='react-select-3-input']")).sendKeys("Har");
+        $(By.xpath("/html//input[@id='react-select-3-input']")).sendKeys(Keys.ENTER);
+        Thread.sleep(1000);
+
+        $(By.xpath("/html//input[@id='react-select-4-input']")).sendKeys("Kar");
+        $(By.xpath("/html//input[@id='react-select-4-input']")).sendKeys(Keys.ENTER);
+        Thread.sleep(3000);
+
+        $(By.id("submit")).click();
+        Thread.sleep(1000);
+
+        $(By.id("closeLargeModal")).click();
     }
 }

@@ -1,0 +1,196 @@
+[1595525363.934][INFO]: Starting ChromeDriver 84.0.4147.30 (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310}) on port 15604
+[1595525363.934][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1595525364.711][INFO]: [846d95054c6a65285a0db7be3c776169] COMMAND InitSession {
+   "capabilities": {
+      "firstMatch": [ {
+         "acceptInsecureCerts": true,
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [ "--proxy-bypass-list=\u003C-loopback>" ],
+            "excludeSwitches": [ "enable-automation", "load-extension" ],
+            "extensions": [  ],
+            "prefs": {
+               "credentials_enable_service": false,
+               "download.default_directory": "C:\\Users\\galka\\IdeaProjects\\selenide\\build\\downloads",
+               "plugins.always_open_pdf_externally": true
+            }
+         },
+         "pageLoadStrategy": "normal"
+      } ]
+   },
+   "desiredCapabilities": {
+      "acceptInsecureCerts": true,
+      "acceptSslCerts": true,
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+         "args": [ "--proxy-bypass-list=\u003C-loopback>" ],
+         "excludeSwitches": [ "enable-automation", "load-extension" ],
+         "extensions": [  ],
+         "prefs": {
+            "credentials_enable_service": false,
+            "download.default_directory": "C:\\Users\\galka\\IdeaProjects\\selenide\\build\\downloads",
+            "plugins.always_open_pdf_externally": true
+         }
+      },
+      "handlesAlerts": true,
+      "javascriptEnabled": true,
+      "pageLoadStrategy": "normal",
+      "takesScreenshot": true
+   }
+}
+[1595525364.716][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "credentials_enable_service": false,
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "download": {
+      "default_directory": "C:\\Users\\galka\\IdeaProjects\\selenide\\build\\downloads"
+   },
+   "plugins": {
+      "always_open_pdf_externally": true
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1595525364.717][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1595525364.720][INFO]: Launching chrome: "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-blink-features=ShadowDOMV0 --enable-logging --ignore-certificate-errors --log-level=0 --no-first-run --password-store=basic --proxy-bypass-list=<-loopback> --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\galka\AppData\Local\Temp\scoped_dir6748_151092888" data:,
+[1595525365.340][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1595525366.354][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1595525367.377][INFO]: [846d95054c6a65285a0db7be3c776169] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": true,
+      "browserName": "chrome",
+      "browserVersion": "84.0.4147.89",
+      "chrome": {
+         "chromedriverVersion": "84.0.4147.30 (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310})",
+         "userDataDir": "C:\\Users\\galka\\AppData\\Local\\Temp\\scoped_dir6748_151092888"
+      },
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:61410"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "windows",
+      "proxy": {
+
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "846d95054c6a65285a0db7be3c776169"
+}
+[1595525367.454][INFO]: [846d95054c6a65285a0db7be3c776169] COMMAND SetWindowRect {
+   "height": 768,
+   "width": 1366
+}
+[1595525367.454][INFO]: Waiting for pending navigations...
+[1595525367.456][INFO]: Done waiting for pending navigations. Status: ok
+[1595525367.570][INFO]: Waiting for pending navigations...
+[1595525367.570][INFO]: Done waiting for pending navigations. Status: ok
+[1595525367.570][INFO]: [846d95054c6a65285a0db7be3c776169] RESPONSE SetWindowRect {
+   "height": 768,
+   "width": 1366,
+   "x": 10,
+   "y": 10
+}
+[1595525367.585][INFO]: [846d95054c6a65285a0db7be3c776169] COMMAND Navigate {
+   "url": "https://demoqa.com/automation-practice-form"
+}
+[1595525367.585][INFO]: Waiting for pending navigations...
+[1595525367.586][INFO]: Done waiting for pending navigations. Status: ok
+[1595525367.798][INFO]: Waiting for pending navigations...
+[1595525369.695][INFO]: Done waiting for pending navigations. Status: ok
+[1595525369.695][INFO]: [846d95054c6a65285a0db7be3c776169] RESPONSE Navigate
+[1595525369.864][INFO]: [846d95054c6a65285a0db7be3c776169] COMMAND FindElement {
+   "using": "css selector",
+   "value": ".main-header"
+}
+[1595525369.864][INFO]: Waiting for pending navigations...
+[1595525369.865][INFO]: Done waiting for pending navigations. Status: ok
+[1595525369.884][INFO]: Waiting for pending navigations...
+[1595525369.885][INFO]: Done waiting for pending navigations. Status: ok
+[1595525369.885][INFO]: [846d95054c6a65285a0db7be3c776169] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "57f0f05c-692e-4230-b0cc-71cf2d5d35de"
+}
+[1595525369.891][INFO]: [846d95054c6a65285a0db7be3c776169] COMMAND GetElementTagName {
+   "id": "57f0f05c-692e-4230-b0cc-71cf2d5d35de"
+}
+[1595525369.891][INFO]: Waiting for pending navigations...
+[1595525369.891][INFO]: Done waiting for pending navigations. Status: ok
+[1595525369.895][INFO]: Waiting for pending navigations...
+[1595525369.895][INFO]: Done waiting for pending navigations. Status: ok
+[1595525369.895][INFO]: [846d95054c6a65285a0db7be3c776169] RESPONSE GetElementTagName "div"
+[1595525369.898][INFO]: [846d95054c6a65285a0db7be3c776169] COMMAND GetElementText {
+   "id": "57f0f05c-692e-4230-b0cc-71cf2d5d35de"
+}
+[1595525369.898][INFO]: Waiting for pending navigations...
+[1595525369.899][INFO]: Done waiting for pending navigations. Status: ok
+[1595525369.918][INFO]: Waiting for pending navigations...
+[1595525369.919][INFO]: Done waiting for pending navigations. Status: ok
+[1595525369.919][INFO]: [846d95054c6a65285a0db7be3c776169] RESPONSE GetElementText "Practice Form"
+[1595525369.928][INFO]: [846d95054c6a65285a0db7be3c776169] COMMAND Quit {
+
+}
+[1595525369.977][INFO]: [846d95054c6a65285a0db7be3c776169] RESPONSE Quit
